@@ -1,5 +1,5 @@
 {
-  "name": "rollup_templ",
+  "name": "live2d_loader",
   "version": "1.0.0",
   "description": "",
   "main": "dist/rollup_templ.cjs.js",
