@@ -17,7 +17,7 @@ export default [
         file: pkg.browser,
         format: 'umd',
         globals: {
-          tslib: 'windows.tslib',
+          tslib: 'window.tslib',
         },
       },
     ],
