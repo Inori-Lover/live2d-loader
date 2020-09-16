@@ -5,6 +5,7 @@
 
     "strict": true,
     "alwaysStrict": true,
+    "moduleResolution": "node",
 
     "sourceMap": true,
 
