@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+
+    "strict": true,
+    "alwaysStrict": true,
+
+    "sourceMap": true,
+
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "noEmitHelpers": true
+  }
+}
