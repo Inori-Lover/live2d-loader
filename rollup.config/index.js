@@ -17,7 +17,7 @@ const globals = {
 
 const suffix = isProduction ? '.min' : '';
 
-export default ['loader', 'waifu-tips'].map((name) => {
+export const config = ['loader', 'waifu-tips'].map((name) => {
   return {
     input: `src/${name}.ts`,
     output: [
