@@ -10,7 +10,7 @@
     "sourceMap": true,
 
     "esModuleInterop": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "noEmitHelpers": true
   }
 }

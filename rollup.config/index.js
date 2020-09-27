@@ -9,11 +9,9 @@ setup(BASE, isProduction);
 
 const plugins = getPlugins(BASE, NODE_ENV, isProduction);
 
-const external = [/tslib/];
+const external = [];
 
-const globals = {
-  tslib: 'window.tslib',
-};
+const globals = {};
 
 const suffix = isProduction ? '.min' : '';
 

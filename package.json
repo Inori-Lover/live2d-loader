@@ -11,7 +11,6 @@
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-replace": "^2.3.3",
-    "@rollup/plugin-typescript": "^6.0.0",
     "@types/dotenv": "^8.2.0",
     "@types/jquery": "^3.5.1",
     "browserslist": "^4.14.2",

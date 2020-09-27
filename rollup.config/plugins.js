@@ -4,7 +4,7 @@ import replace from '@rollup/plugin-replace';
 import { terser } from 'rollup-plugin-terser';
 import resolvePlugin from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
+import typescript from './custom-plugin/plugin-typescript/dist/index.es';
 import babel from '@rollup/plugin-babel';
 
 import { commitID } from './commit-id';
