@@ -26,7 +26,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=\"production\" rollup -c",
     "dev": "cross-env NODE_ENV=\"development\" rollup -c -w",
-    "env": "browserslist"
+    "env": "browserslist",
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "",
