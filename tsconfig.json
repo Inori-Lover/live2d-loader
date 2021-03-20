@@ -7,8 +7,6 @@
     "alwaysStrict": true,
     "moduleResolution": "node",
 
-    "sourceMap": true,
-
     "esModuleInterop": true,
     "importHelpers": false,
     "noEmitHelpers": true

@@ -1,5 +1,6 @@
 import { setup } from './setup';
 import { getPlugins } from './plugins';
+import kebabCase from './kebab-case';
 
 const { NODE_ENV = 'development' } = process.env;
 const isProduction = NODE_ENV === 'production';
@@ -15,12 +16,12 @@ const globals = {};
 
 const suffix = isProduction ? '.min' : '';
 
-export const config = ['loader', 'waifu-tips'].map((name) => {
+export const config = ['live2d-es'].map((name) => {
   return {
     input: `src/${name}.ts`,
     output: [
       {
-        name,
+        name: kebabCase.reverse(name),
         file: `dist/${name}${suffix}.js`,
         format: 'umd',
         globals,
