@@ -7,11 +7,18 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from './custom-plugin/plugin-typescript/dist/index.es';
 import babel from '@rollup/plugin-babel';
 
+import { del } from './custom-plugin/rollup-plugin-del/index';
 import { commitID } from './commit-id';
 import { buildDate } from './build-date';
 
+/**
+ * @param {string} BASE
+ * @param {string} NODE_ENV
+ * @param {boolean} isProduction
+ */
 export const getPlugins = (BASE, NODE_ENV, isProduction) => {
   const plugins = [
+    del({ path: ['dist/**', '!dist', '!dist/.gitignore'] }),
     resolvePlugin(), // so Rollup can find `ms`
     commonjs(), // so Rollup can convert `ms` to an ES module
     replace({
