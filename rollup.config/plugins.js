@@ -15,9 +15,12 @@ export const getPlugins = (BASE, NODE_ENV, isProduction) => {
     resolvePlugin(), // so Rollup can find `ms`
     commonjs(), // so Rollup can convert `ms` to an ES module
     replace({
-      __buildEnv__: NODE_ENV,
-      __buildID__: commitID,
-      __buildDate__: buildDate,
+      values: {
+        __buildEnv__: NODE_ENV,
+        __buildID__: commitID,
+        __buildDate__: buildDate,
+      },
+      preventAssignment: true,
     }),
     typescript({ tsconfig: resolve(BASE, './tsconfig.json') }), // so Rollup can convert TypeScript to JavaScript
     babel({
