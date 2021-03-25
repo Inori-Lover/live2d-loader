@@ -1,5 +1,3 @@
-const live2d = () => {
-  console.log('what is 1');
-};
+import { main } from './src/live2d-es';
 
-export default live2d;
+export default main;

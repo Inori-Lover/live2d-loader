@@ -8,6 +8,21 @@
     <script src="https://cdn.jsdelivr.net/npm/tslib@2.1.0/tslib.js"></script>
   </head>
   <body>
+    <script src="./lib/live2d.js"></script>
     <script src="./dist/live2d-es.js"></script>
+    <script>
+      // 初始化，挂载
+      window.live2dEs.mount(config);
+      // 卸载
+      window.live2dEs.unmount();
+      // 忘记所有设置，卸载
+      window.live2dEs.reset();
+      // 回到最初的设置
+      window.live2dEs.restore();
+      // 更新设置
+      window.live2dEs.config((preConfig) => {
+        return { ...preConfig };
+      });
+    </script>
   </body>
 </html>
